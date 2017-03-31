@@ -22,7 +22,7 @@ node keystone
 ```
 ## Project Structure
 
-The project's structure is the same as the [KeystoneJS yo generated project](https://github.com/keystonejs/generator-keystone). It has additional routes for API, jade views for the angular partials, and more javascript with the angular app.
+The project's structure is the same as the [KeystoneJS yo generated project](https://github.com/keystonejs/generator-keystone). It has additional routes for API, pug views for the angular partials, and more javascript with the angular app.
 ```
 |--public
 |  |--js
@@ -43,18 +43,18 @@ The project's structure is the same as the [KeystoneJS yo generated project](htt
 |  |  |  |  The Keystone API services consumed with ngResource
 |--routes
 |  |--ang_*
-|  |  The routes for rendering the partials built with jade.
+|  |  The routes for rendering the partials built with pug.
 |  |--api
 |  |  The api for our angular app
 |  |--index.js
 |  |  Modified for including the routes for the api and partials.
 |--templates
 |  |--layouts
-|  |  |--ang_*.jade
-|  |  |  The jade layouts for each angular app
+|  |  |--ang_*.pug
+|  |  |  The pug layouts for each angular app
 |  |--views
 |  |  |--ang_*
-|  |  |  The jade partials for each angular module. The main file is called app.jade
+|  |  |  The pug partials for each angular module. The main file is called app.pug
 ```
 
 ## Material AngularJS
@@ -64,16 +64,16 @@ The project makes use of the project [Material Design for AngularJS Apps](https:
 ## Bootstrap Material
 
 The project is also using a [bootstrap material theme](http://fezvrasta.github.io/bootstrap-material-design/), if you want to see it in action, uncomment the following:
-```jade
-//- templates/views/ang_bootm/app.jade Lines 13 to 14
+```pug
+//- templates/views/ang_bootm/app.pug Lines 13 to 14
 script(type='text/javascript').
   $(function() {$.material.init();});
 
-//- templates/layouts/ang_bootm.jade Lines 24 to 25
+//- templates/layouts/ang_bootm.pug Lines 24 to 25
 link(href="/js/lib/bootstrap-material-design/dist/css/material-wfont.min.css", rel="stylesheet")
 link(href="/js/lib/bootstrap-material-design/dist/css/ripples.min.css", rel="stylesheet")
 
-//- templates/layouts/ang_bootm.jade Lines 63 to 64
+//- templates/layouts/ang_bootm.pug Lines 63 to 64
 script(src="/js/lib/bootstrap-material-design/dist/js/ripples.min.js")
 script(src="/js/lib/bootstrap-material-design/dist/js/material.min.js")
 ```
