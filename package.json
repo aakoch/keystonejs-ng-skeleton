@@ -4,16 +4,25 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/dvdcastro/keystonejs-ng-skeleton"
+    "url": "git+https://github.com/dvdcastro/keystonejs-ng-skeleton.git"
   },
   "dependencies": {
-    "keystone": "^4.0.0-beta.1",
     "async": "^1.5.0",
-    "lodash": "^3.10.1"
+    "keystone": "^4.0.0-beta.1",
+    "lodash": "^3.10.1",
+    "pug": "^2.0.0-beta11"
   },
   "scripts": {
     "start": "node keystone.js",
     "postinstall": "bower install"
   },
-  "main": "keystone.js"
+  "main": "keystone.js",
+  "description": "This project shows how to build [KeystoneJS](https://github.com/keystonejs/keystone) apps that use [AngularJS](https://angularjs.org) as front-end.",
+  "bugs": {
+    "url": "https://github.com/dvdcastro/keystonejs-ng-skeleton/issues"
+  },
+  "homepage": "https://github.com/dvdcastro/keystonejs-ng-skeleton#readme",
+  "devDependencies": {},
+  "author": "Adam A. Koch (aakoch)",
+  "license": "ISC"
 }
